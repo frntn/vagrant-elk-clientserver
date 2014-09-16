@@ -18,8 +18,8 @@ It builds up 2 virtual machines :
 ### elkserver
 
 * The [frntn/trusty64-elk](https://vagrantcloud.com/frntn/boxes/trusty64-elk) 
-source box has full ELK stack.
-* VM is **not** provisioned at start up
+source box has a full ELK stack.
+* VM is **not** provisioned at start up (stack is embedded inside the box)
 * VM has host-only IP address `192.168.34.150`
 * `Kibana` is binded on port 80 through `nginx`
 * `ElasticSearch` is binded on port 9200
@@ -30,7 +30,7 @@ source box has full ELK stack.
 
 * The [frntn/trusty64-wordpress](https://vagrantcloud.com/frntn/boxes/trusty64-wordpress) 
 contains a ready to use WORDPRESS server
-* VM is provisioned at start up : install and configure `logstash-forwarder`
+* VM is provisioned at start up to install and configure `logstash-forwarder`
 * VM has host-only IP address `192.168.34.151`
 * `Wordpress` is binded on port 80 through `nginx`
 * `Logstash-forwarder` is configured to send auth and syslog events to 
