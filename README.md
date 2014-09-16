@@ -56,8 +56,8 @@ Boxes are now up, you should be able to access them with your browser :
 * Wordpress : http://192.168.34.151/
 
 If not, you might need some extra configuration for it to work in your own 
-environment (port forwarding, ...). I suggest you read the vagrant 
-documentation.
+environment (port forwarding, ...). I suggest you read the 
+[vagrant documentation](http://docs.vagrantup.com/v2/).
 
 Feel free to contact me (links at the beginning of this file).
 
