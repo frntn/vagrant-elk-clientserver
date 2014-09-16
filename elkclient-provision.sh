@@ -20,6 +20,7 @@ chmod 400 ~/.ssh/id_dsa
 # CERTIFICATE FROM SERVER
 mkdir -p /etc/pki/tls/certs
 scp -o StrictHostKeyChecking=no vagrant@192.168.34.150:/etc/pki/tls/certs/logstash-forwarder.crt /etc/pki/tls/certs/
+rm ~/.ssh/id_dsa
 
 # BASE CONFIGURATION
 cat <<EOCONF > /etc/logstash-forwarder
