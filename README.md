@@ -19,7 +19,7 @@ It builds up 2 virtual machines :
 
 * The [frntn/trusty64-elk](https://vagrantcloud.com/frntn/boxes/trusty64-elk) 
 source box has full ELK stack.
-* VM is not provisioned at start up
+* VM is **not** provisioned at start up
 * VM has host-only IP address `192.168.34.150`
 * `Kibana` is binded on port 80 through `nginx`
 * `ElasticSearch` is binded on port 9200
@@ -43,12 +43,16 @@ Pre-requisites : [Vagrant](http://www.vagrantup.com/) and
 
 Clone the repo
 
-    git clone https://github.com/frntn/vagrant-elk-clientserver.git frntn-elk
-    cd frntn-elk
+```shell
+$ git clone https://github.com/frntn/vagrant-elk-clientserver.git frntn-elk
+$ cd frntn-elk
+```
 
 Start the VMs 
 
-    vagrant up
+```shell
+$ vagrant up
+```
 
 Boxes are now up, you should be able to access them with your browser :
 
@@ -65,8 +69,10 @@ Feel free to contact me (links at the beginning of this file).
 
 Starting VM one by one
 
-    vagrant up elkserver
-    vagrant up elkclient
+```shell
+$ vagrant up elkserver
+$ vagrant up elkclient
+```
 
 > Note : `elkclient` provisioning grab certificate from server to send logs 
 > through an encrypted connection. So if you start this vm from "not created" 
@@ -74,13 +80,15 @@ Starting VM one by one
 
 Connecting via SSH
 
-    vagrant ssh elkserver
-    vagrant ssh elkclient
+```shell
+$ vagrant ssh elkserver
+$ vagrant ssh elkclient
+```
 
 ## TODO
 
-Add extra configuration to Logstash-fowarder to enable wordpress application logging
-Add collectd with some relevant plugins to enable elkclient system monitoring
+Add extra configuration to Logstash-fowarder to enable wordpress application logging  
+Add collectd with some relevant plugins to enable elkclient system monitoring  
 
 ----
 *Hope you'll like this project as much as I add fun creating it :)*
