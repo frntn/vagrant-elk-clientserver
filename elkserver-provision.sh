@@ -25,4 +25,6 @@ input {
 }
 EOF
 
+mv /tmp/*.jar "/usr/lib/jvm/java-7-oracle/jre/lib/security/"
+
 service logstash restart
