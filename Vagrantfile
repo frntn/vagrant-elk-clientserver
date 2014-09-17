@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "elkserver" do |elkserver|
     elkserver.vm.box = "frntn/trusty64-elk"
     elkserver.vm.network "private_network", ip: "192.168.34.150"
+    elkserver.vm.provision "shell", path: "elkserver-provision.sh"
     elkserver.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
       vb.customize ["modifyvm", :id, "--cpus", "2"]
