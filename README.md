@@ -24,8 +24,9 @@ source box has a full ELK stack.
 * `Kibana` is binded on port 80 through `nginx`
 * `ElasticSearch` is binded on port 9200
 * `lumberjack listener` is binded on port 5000 through `logstash` 
-* `collectd listener` is binded on port 25826 through `logstash`
 [input](http://logstash.net/docs/latest/inputs/lumberjack)
+* `collectd listener` is binded on port 25826 through `logstash`
+[input](http://logstash.net/docs/latest/inputs/collectd)
 
 ### elkclient
 
