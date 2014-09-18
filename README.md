@@ -92,7 +92,6 @@ $ vagrant ssh elkclient
 ## TODO
 
 Add extra configuration to Logstash-fowarder to enable wordpress application logging  
-Add collectd with some relevant plugins to enable elkclient system monitoring  
 
 ----
 *Hope you'll like this project as much as I add fun creating it :)*
