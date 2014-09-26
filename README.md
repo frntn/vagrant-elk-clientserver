@@ -1,5 +1,5 @@
 
-> MAJOR SECURITY UPDATE 09/27/2014 : Fixed bash version after the [shellshocker.net](https://shellshocker.net/) nuke
+> MAJOR SECURITY UPDATE 09/27/2014 : All boxes have been fixed after the [shellshocker.net](https://shellshocker.net/) nuke
 
 # Client-Server ELK demo
 
