@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     elkserver.vm.network "private_network", ip: "192.168.34.150"
     elkserver.vm.provision "file", source: "./UnlimitedJCEPolicyJDK7/local_policy.jar", destination: "/tmp/local_policy.jar"
     elkserver.vm.provision "file", source: "./UnlimitedJCEPolicyJDK7/US_export_policy.jar", destination: "/tmp/US_export_policy.jar"
+    elkserver.vm.provision "file", source: "./nginx/default", destination: "/tmp/nginx-default"
     elkserver.vm.provision "shell", path: "elkserver-provision.sh"
     elkserver.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "2048"]

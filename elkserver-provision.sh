@@ -26,5 +26,7 @@ input {
 EOF
 
 mv /tmp/*.jar "/usr/lib/jvm/java-7-oracle/jre/lib/security/"
+mv /tmp/nginx-default "/etc/nginx/sites-available/default"
 
 service logstash restart
+service nginx restart
